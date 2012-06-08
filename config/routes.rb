@@ -1,6 +1,20 @@
 Help::Application.routes.draw do
+  get "static_pages/pictures"
+
+  get "static_pages/story"
+
+  get "static_pages/gift"
+
+  get "static_pages/letter"
+
+  get "static_pages/save"
+
+  get "static_pages/contact"
+
+  resources :static_pages
   resources :products
 
+  root :to => 'static_pages#story'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
