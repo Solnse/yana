@@ -15,33 +15,38 @@
 	<div class="row">
 		<style>
 		    .span9, .span3 {background-color: rgb(51,153,255);}
+		    .buffer {padding: 10px;}
 		</style>
 		<div class="span9">
-		    <%= yield %>
+			<div class="buffer">
+		    	<%= yield %>
+		    	<%= render "layouts/footer" %>
+		    </div>
 		</div>
 		<div class="span3">
+			<div class="buffer">
 
-
-			<h2>About Yana</h2>
-			<br />
-			<ul class="thumbnails">
-			  <li><a href="#"><img class="thumbnail" src='<%= image_path("thumbnails/yana#{ Random.new.rand(1..8).to_s }thumb.jpg") %>'></li></a>
-			</ul>
-			Yana is a beautiful, cheerful, innocent girl who deserves a chance at a happy life. 
-			Since she was 1 month old, she has been fighting for her life with a congenital heart
-			defect. Doctors performed a surgery, but now she is in need of another life-saving 
-			surgery.
-			<br /><br />
-            After exhausting all possible solutions to help Yana, we are creating this website 
-            to reach out to the public in hopes that we can find the help she so desperately needs. 
-            Please look over the pages, read about Yana's story, look at some of her favorite pictures, 
-            and find it in your heart to help Yana in some small way. Your help can save her life, 
-            and let an amazing girl continue her happy journey through this life.
-            <br /><br />
-            What Yana needs now most of all is help paying for her life-saving surgery. If you are unable to donate,
-            perhaps you will find some way to brighten her days. Send her a letter (it's always exciting),
-            or send her a small gift. Whatever way you can help, small or big will bring such joy to her.
-            Thank you for your attention, and best thoughts and wishes to you from Yana herself.
+				<h2>About Yana</h2>
+				<br />
+				<ul class="thumbnails">
+				  <li><a href="#"><img class="thumbnail" src='<%= image_path("thumbnails/yana#{ Random.new.rand(1..8).to_s }thumb.jpg") %>'></li></a>
+				</ul>
+				Yana is a beautiful, cheerful, innocent girl who deserves a chance at a happy life. 
+				Since she was 1 month old, she has been fighting for her life with a congenital heart
+				defect. Doctors performed a surgery, but now she is in need of another life-saving 
+				miracle.
+				<br /><br />
+            	After exhausting all possible solutions to help Yana, we are creating this website 
+            	to reach out to the public in hopes that we can find the help she so desperately needs. 
+            	Please look over the pages, read about Yana's story, look at some of her favorite pictures, 
+            	and find it in your heart to help Yana in some small way. Your help can save her life, 
+            	and let an amazing girl continue her happy journey through this life.
+            	<br /><br />
+            	What Yana needs now most of all is help paying for her life-saving surgery. If you are unable to donate,
+            	perhaps you will find some way to brighten her days. Send her a letter (it's always exciting),
+            	or send her a small gift. Whatever way you can help, small or big will bring such joy to her.
+            	Thank you for your attention, and best thoughts and wishes to you from Yana herself.
+        	</div>
 		</div>
 	</div>
 		
@@ -61,7 +66,7 @@
 					<li><%= link_to "Yana's Story", static_pages_story_path %></li>
 					<li><%= link_to "Pictures", static_pages_pictures_path %></li>
 					<li><%= link_to "Help Save Yana", static_pages_save_path %></li>
-					<li><%= link_to "Send Yana a Gift", static_pages_gift_path %></li>
+					<li><%= link_to "Give Some Happiness", static_pages_gift_path %></li>
 					<li><%= link_to "Send Yana a Letter", static_pages_letter_path %></li>
 					<li><%= link_to "Contact Us", static_pages_contact_path %></li>
 				</ul>
