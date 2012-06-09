@@ -29,8 +29,9 @@
 				<h2>About Yana</h2>
 				<br />
 				<ul class="thumbnails">
-				  <li><a href="#"><img class="thumbnail" src='<%= image_path("thumbnails/yana#{ Random.new.rand(1..8).to_s }thumb.jpg") %>'></li></a>
+				  <li><a href="#"><img class="thumbnail" src='<%= image_path("thumbnails/yana#{ Random.new.rand(1..8).to_s }thumb.jpg") %>'></a></li>
 				</ul>
+				<div class="donate"><%= render "layouts/donate" %></div>
 				Yana is a beautiful, cheerful, innocent girl who deserves a chance at a happy life. 
 				Since she was 1 month old, she has been fighting for her life with a congenital heart
 				defect. Doctors performed a surgery, but now she is in need of another life-saving 
