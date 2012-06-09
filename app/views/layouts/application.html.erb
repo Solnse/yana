@@ -13,29 +13,35 @@
 <body background=<%= image_path("background-165.gif") %>>
 <div class="container">
 	<div class="row">
-		<div class="span9"><%= yield %></div>
+		<style>
+		    .span9 {background-color: rgb(51,153,255);}
+		</style>
+		<div class="span9">
+		    <%= yield %>
+		</div>
 		<div class="span3">
+
+
 			<h2>About Yana</h2>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-			Nunc posuere, leo id hendrerit interdum, nisi nisi sodales nulla, 
-			quis sagittis nisi felis nec nisl. Etiam quis lorem felis. Praesent 
-			pellentesque mattis odio, eget iaculis nunc suscipit facilisis. Aliquam 
-			vitae diam massa, sit amet cursus tellus. Cras vulputate vulputate 
-			fermentum. Phasellus laoreet viverra diam sit amet sollicitudin. Sed 
-			tempor iaculis malesuada. Aenean in orci id risus facilisis malesuada. 
+			<br />
+			<ul class="thumbnails">
+			  <li><a href="#"><img class="thumbnail" src='<%= image_path("thumbnails/yana#{ rand(1..8) }thumb.jpg") %>'></li></a>
+			</ul>
+			Yana is a beautiful, cheerful, innocent girl who deserves a chance at a happy life. 
+			Since she was 1 month old, she has been fighting for her life with a congenital heart
+			defect. Doctors performed a surgery, but now she is in need of another life-saving 
+			surgery.
 			<br /><br />
-			Nullam sit amet elit mi, eget viverra quam. Integer tempor quam nulla, 
-			vitae aliquet erat. Suspendisse euismod enim laoreet purus dapibus molestie. 
-			Maecenas sed nulla risus, et porta erat. Donec vel volutpat arcu. Vivamus 
-			nec diam erat. Donec et tristique risus.
-			<br /><br />
-            Phasellus facilisis aliquam porta. Nullam commodo fringilla libero non tempor. 
-            Aliquam elementum, metus vel varius pharetra, est orci euismod nisl, vitae 
-            feugiat felis massa vitae urna. Vestibulum auctor vestibulum posuere. Proin 
-            venenatis dui ac magna mattis eleifend fermentum nibh ullamcorper. Aliquam in 
-            sollicitudin mauris. Quisque sit amet odio ullamcorper eros ultrices pulvinar 
-            in at lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada 
-            fames ac turpis egestas. Vestibulum eget dui elit, eget lacinia diam.
+            After exhausting all possible solutions to help Yana, we are creating this website 
+            to reach out to the public in hopes that we can find the help she so desperately needs. 
+            Please look over the pages, read about Yana's story, look at some of her favorite pictures, 
+            and find it in your heart to help Yana in some small way. Your help can save her life, 
+            and let an amazing girl continue her happy journey through this life.
+            <br /><br />
+            What Yana needs now most of all is help paying for her life-saving surgery. If you are unable to donate,
+            perhaps you will find some way to brighten her days. Send her a letter (it's always exciting),
+            or send her a small gift. Whatever way you can help, small or big will bring such joy to her.
+            Thank you for your attention, and best thoughts and wishes to you from Yana herself.
 		</div>
 	</div>
 		
