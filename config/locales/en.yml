@@ -59,7 +59,7 @@ en:
                   amount of money will be helpful, any help will be appreciated, soon Yana will have her 7th birthday and we all hope 
                   that it will not be her last birthday."
         plea_heading: 	"A plea from a sick girl\'s mother..."
-        o_writing: 	"Olesya writing..."
+        o_writing: 	"Olesya writes..."
         o_block: 		"My name is Olesya Lepeykina. My daughter Jana Lepeykinoy requires removal of the proportion of the left lung. 
                          I\'ll tell you a little about her life: Jana was born June 11, 2005. In a month my daughter was diagnosed with 
                          congenital heart disease, the full form of AB Communications. In 2006, May 12 was the correction of vice by 
@@ -108,3 +108,15 @@ en:
         rus_address_1: "410507 г.Саратов пос."
         rus_address_2: "Жасминный ул. Майская 4В кв 20"
         rus_address_3: "Лепейкиной Олесе Андреевне"
+      save:
+        heading:      "Yana in the News"
+      letter:
+        heading:      "Send Yana a Letter"
+        block_1:      "Yana is really grateful for all the support she has already received. She really hopes that she will grow up 
+                       and help others too. One of her favorite things is to receive letters and packages in the mail! (don\'t we all?) 
+                       So, if you would like to send her a personal letter, feel free to send one to her address located on the Give 
+                       Some Happiness page."
+        block_2:      "If you would like to send an email, or electronic card, she would love that too!. You can use popular websites like:"
+        find_something: "Or look around and find something new and exciting!!"
+        send_to:      "You can send electronic mail and cards like the ones above to her at: "
+        thank_you:    "Yana thanks you, and sends many smiles for your day!"

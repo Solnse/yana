@@ -1,20 +1,21 @@
 Help::Application.routes.draw do
+
   get "static_pages/pictures"
-
   get "static_pages/story"
-
   get "static_pages/gift"
-
   get "static_pages/letter"
-
   get "static_pages/save"
-
   get "static_pages/contact"
 
-  resources :static_pages
-  resources :products
+  scope "(:locale)", locale: /en|ru/  do 
+    resources :static_pages
+  end
+  # match '*path', to: redirect("/#{I18n.default_locale}/%{path}"), constraints: lambda { |req| !req.path.starts_with? "/#{I18n.default_locale}/" }
+  # match '', to: redirect("/#{I18n.default_locale}")
+  root to: 'static_pages#story'
+  match "/:locale" => 'static_pages#story'
 
-  root :to => 'static_pages#story'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

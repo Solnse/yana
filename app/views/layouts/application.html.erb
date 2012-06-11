@@ -25,9 +25,10 @@
 		</div>
 		<div class="span3">
 			<div class="buffer">
-
+				<%= link_to_unless_current "English", locale: "en" %> |
+				<%= link_to_unless_current "русский", locale: "ru" %><br />
 				<h2> <%= t "about_title" %> </h2>
-				<br />
+
 				<ul class="thumbnails">
 				  <li><a href="#"><img class="thumbnail" src='<%= image_path("thumbnails/yana#{ Random.new.rand(1..8).to_s }thumb.jpg") %>'></a></li>
 				</ul>
@@ -45,8 +46,8 @@
 </body>
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
-		<div class"container">
-			<a class="btn btn-navbar" data-toggle="collapse" dadta-target=".nav-collapse">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
