@@ -104,7 +104,7 @@ en:
         address_1:    "ulitsa Mayskaya 4B flat 20"
         address_2:    "poselok Zhasminnuy"
         address_3:    "Saratov, Russia 410507"
-        in_russian: "OR (in Russian)"
+        in_russian:   "OR (in Russian)"
         rus_address_1: "410507 г.Саратов пос."
         rus_address_2: "Жасминный ул. Майская 4В кв 20"
         rus_address_3: "Лепейкиной Олесе Андреевне"
